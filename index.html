@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="wf-loading">
+<head>
+  <title>Cribbb | Join the conversation</title>
+  <meta charset="UTF-8">
+  <link href="css/screen.css" rel="stylesheet" media="screen" />
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.google.code.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <header>
+    <h1>Cribbb</h1>
+  </header>
+
+  <section class="follow">
+    <div class="icons">
+      <a href="http://twitter.com/cribbbhq"><i class="icon icon-twitter"></i></a>
+      <a href="http://github.com/cribbb/cribbb"><i class="icon icon-github"></i></a>
+      <a href="http://culttt.com/tag/cribbb"><i class="icon icon-culttt">C</i></a>
+    </div>
+  </section>
+
+  <section class="signup">
+    <p>Sign up to get <span>early</span> access</p>
+    <form action="http://cribbb.us5.list-manage.com/subscribe/post?u=303990f04b26b185f497a44bb&amp;id=f1a0ae928a" method="POST">
+      <input type="email" placeholder="Your email address..." class="email" name="EMAIL"><input type="submit" value="I want in" class="button">
+    </form>
+  </section>
+
+  <section class="posts">
+    <article class="post post-1">
+      <div class="avatar">
+        <img src="/images/philip-brown.jpg" alt="Philip Brown">
+      </div>
+      <div class="bubble">
+        <div class="chat">
+          <p>Discovered by the Germans in 1904, they named it San Diego, which of course in German means a whale's vagina.</p>
+        </div>
+        <div class="meta">
+          <span class="timestamp">Posted 10 minutes ago</span>
+        </div>
+      </div>
+    </article>
+    <article class="post post-2">
+      <div class="avatar">
+        <img src="/images/elle-green.jpg" alt="Elle Green">
+      </div>
+      <div class="bubble">
+        <div class="chat">
+          <p>No, there's no way that's correct.</p>
+        </div>
+        <div class="meta">
+          <span class="timestamp">Posted 8 minutes ago</span>
+        </div>
+      </div>
+    </article>
+    <article class="post post-3">
+      <div class="avatar">
+        <img src="/images/mark-jones.jpg" alt="Mark Jones">
+      </div>
+      <div class="bubble">
+        <div class="chat">
+          <p>I'm sorry, I was trying to impress you. I don't know what it means. I'll be honest, I don't think anyone knows what it means anymore. Scholars maintain that the translation was lost hundreds of years ago.</p>
+        </div>
+        <div class="meta">
+          <span class="timestamp">Posted 7 minutes ago</span>
+        </div>
+      </div>
+    </article>
+    <article class="post post-4">
+      <div class="avatar">
+        <img src="/images/john-smith.jpg" alt="John Smith">
+      </div>
+      <div class="bubble">
+        <div class="chat">
+          <p>Doesn't it mean Saint Diego?</p>
+        </div>
+        <div class="meta">
+          <span class="timestamp">Posted 6 minutes ago</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.post-1').fadeTo(1000, 1, function(){
+      $('.post-2').delay(1000).fadeTo(1000, 1, function(){
+        $('.post-3').delay(1000).fadeTo(1000, 1, function(){
+          $('.post-4').delay(1000).fadeTo(1000, 1, function(){
+            $('.footer').show();
+          });
+        });
+      });
+    });
+  });
+</script>
+<script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'vrw3gep',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6105422-15', 'cribbb.com');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
